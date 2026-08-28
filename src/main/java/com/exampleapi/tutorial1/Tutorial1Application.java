@@ -41,7 +41,7 @@ public ResponseEntity<Object> putProduct(@PathVariable("id") String id,@RequestB
 	productRepo.put(product.getId(), product);
 return new ResponseEntity<Object>("The object is updated successfully !",HttpStatus.OK);
 }
-@RequestMapping(value = "/products/{id}",method = RequestMethod.PUT)
+@RequestMapping(value = "/products/{id}",method = RequestMethod.DELETE)
 public ResponseEntity<Object> putProduct(@PathVariable("id") String id)throws Exception{
 	if (!productRepo.containsKey(id)) {
 		throw new productNotFoundException();
