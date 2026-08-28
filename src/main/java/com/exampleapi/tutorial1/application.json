@@ -1,0 +1,6 @@
+{"spring":{"datasource":[{"driverClassName":"com.mysql.jdbc.Driver"},
+{"username":"root"},
+{"password":""},
+{"url":"http://localhost:8080/PRODUCTSERVICE?autoreconnect=true"},
+{"validationQuery":"SELECT 1"}]
+}}
